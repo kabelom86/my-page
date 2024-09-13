@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "About Me";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h1>About Me</h1>
+  <article class="intro">
+    <p>Thanks for coming to visit.</p>
+    <p>TODO</p>
+  </article>
+  <article class="hobbies">
+    <h3>My Hobbies</h3>
+    <p>
+      Outside of programming I enjoy taking walks through as many neighbourhoods
+      and parks in my native city of <span is:raw>{Joburg}</span> 🇿🇦. I have an exploring
+      nature! 😄
+    </p>
+    <p>Cars, Motorcyles and Racing. I'm a fan of them all!</p>
+    <p>
+      Nature, Sustainable Living and Evironmental Conservation. These are my
+      passions.
+    </p>
+    <p>Sci-Fi Books, Movies and TV Shows. For my downtime.</p>
+  </article>
+</BaseLayout>

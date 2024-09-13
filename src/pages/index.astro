@@ -1,5 +1,5 @@
 ---
-import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 
 import htmlLogo from "../assets/icons8-html-48.png";
@@ -12,8 +12,11 @@ import astroLogo from "../assets/icons8-astro-js-48.png";
 import svelteLogo from "../assets/icons8-svelte-48.png";
 import sqLogo from "../assets/icons8-sqlite-48.png";
 import supabaseLogo from "../assets/icons8-supabase-48.png";
+import bashLogo from "../assets/icons8-bash-48.png";
 
 import githubLogo from "../assets/icons8-github-48.png";
+
+const pageTitle = "Kabelo Peelê -- Frontend Dev";
 ---
 
 <html lang="en">
@@ -22,55 +25,53 @@ import githubLogo from "../assets/icons8-github-48.png";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Kabelo Peel&ecirc; -- Frontend Dev</title>
   </head>
   <body>
-    <Header />
-    <article>
-      <h1><span is:raw>{Hello}</span>, friend!</h1>
-      <h3>
-        I am Kabelo -a frontend developer- and this is my page. You are welcome
-        🙂
-      </h3>
-    </article>
-    <section>
-      <h4>-- What I Know --</h4>
-      <div class="logo-container">
-        <Image src={htmlLogo} alt="HTML logo" />
-        <Image src={cssLogo} alt="CSS logo" />
-        <Image src={tailwindLogo} alt="Tailwind logo" />
-        <Image src={jsLogo} alt="JS logo" />
-        <Image src={pythonLogo} alt="Python logo" />
-        <Image src={tsLogo} alt="Typescript logo" />
-        <Image src={astroLogo} alt="Astro JS logo" />
-        <Image src={svelteLogo} alt="Svelte JS logo" />
-        <Image src={sqLogo} alt="sqlite logo" />
-        <Image src={supabaseLogo} alt="supabase logo" />
-      </div>
-    </section>
-    <section>
-      <h3>-- Contact Me --</h3>
-      <div class="contact-container">
-        <!-- Github logo link -->
-        <a href="https://github.com/kabelom86">
-          <Image src={githubLogo} alt="github logo" />
-        </a>
-        <!-- Contact form -->
-        <form
-          action="mailto:kabelom.p@live.com"
-          method="get"
-          enctype="text/plain"
-        >
-          <input type="text" name="subject" placeholder="Your Name" /><br />
-          <input type="email" name="email" placeholder="Your Email" /><br />
-          <textarea name="body" rows="5" cols="30" placeholder="Your Message"
-          ></textarea><br />
-          <input type="submit" value="Send" />
-        </form>
-      </div>
-    </section>
-    <footer>
-      <p>Made with many 😊's - Kabelo Peel&ecirc;</p>
-    </footer>
+    <BaseLayout pageTitle={pageTitle}>
+      <article>
+        <h1><span is:raw>{Hello}</span>, friend!</h1>
+        <h3>
+          I am Kabelo -a frontend developer- and this is my page. You are
+          welcome 🙂
+        </h3>
+      </article>
+      <section>
+        <h4>-- What I Know --</h4>
+        <div class="logo-container">
+          <Image src={htmlLogo} alt="HTML logo" />
+          <Image src={cssLogo} alt="CSS logo" />
+          <Image src={tailwindLogo} alt="Tailwind logo" />
+          <Image src={jsLogo} alt="JS logo" />
+          <Image src={pythonLogo} alt="Python logo" />
+          <Image src={tsLogo} alt="Typescript logo" />
+          <Image src={astroLogo} alt="Astro JS logo" />
+          <Image src={svelteLogo} alt="Svelte JS logo" />
+          <Image src={sqLogo} alt="sqlite logo" />
+          <Image src={supabaseLogo} alt="supabase logo" />
+          <Image src={bashLogo} alt="bash logo" />
+        </div>
+      </section>
+      <section>
+        <h3>-- Contact Me --</h3>
+        <div class="contact-container">
+          <!-- Github logo link -->
+          <a href="https://github.com/kabelom86">
+            <Image src={githubLogo} alt="github logo" />
+          </a>
+          <!-- Contact form -->
+          <form
+            action="mailto:kabelom.p@live.com"
+            method="get"
+            enctype="text/plain"
+          >
+            <input type="text" name="subject" placeholder="Your Name" /><br />
+            <input type="email" name="email" placeholder="Your Email" /><br />
+            <textarea name="body" rows="5" cols="30" placeholder="Your Message"
+            ></textarea><br />
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </section>
+    </BaseLayout>
   </body>
 </html>
