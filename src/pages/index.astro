@@ -12,6 +12,8 @@ import astroLogo from "../assets/icons8-astro-js-48.png";
 import svelteLogo from "../assets/icons8-svelte-48.png";
 import sqLogo from "../assets/icons8-sqlite-48.png";
 import supabaseLogo from "../assets/icons8-supabase-48.png";
+
+import githubLogo from "../assets/icons8-github-48.png";
 ---
 
 <html lang="en">
@@ -25,14 +27,14 @@ import supabaseLogo from "../assets/icons8-supabase-48.png";
   <body>
     <Header />
     <article>
-      <h1><span>Hello</span>, friend!</h1>
+      <h1><span is:raw>{Hello}</span>, friend!</h1>
       <h3>
-        I'm Kabelo -a frontend developer- and this is my page. You are welcome
+        I am Kabelo -a frontend developer- and this is my page. You are welcome
         🙂
       </h3>
     </article>
     <section>
-      <h4>What I Know</h4>
+      <h4>-- What I Know --</h4>
       <div class="logo-container">
         <Image src={htmlLogo} alt="HTML logo" />
         <Image src={cssLogo} alt="CSS logo" />
@@ -46,5 +48,29 @@ import supabaseLogo from "../assets/icons8-supabase-48.png";
         <Image src={supabaseLogo} alt="supabase logo" />
       </div>
     </section>
+    <section>
+      <h3>-- Contact Me --</h3>
+      <div class="contact-container">
+        <!-- Github logo link -->
+        <a href="https://github.com/kabelom86">
+          <Image src={githubLogo} alt="github logo" />
+        </a>
+        <!-- Contact form -->
+        <form
+          action="mailto:kabelom.p@live.com"
+          method="get"
+          enctype="text/plain"
+        >
+          <input type="text" name="subject" placeholder="Your Name" /><br />
+          <input type="email" name="email" placeholder="Your Email" /><br />
+          <textarea name="body" rows="5" cols="30" placeholder="Your Message"
+          ></textarea><br />
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>Made with many 😊's - Kabelo Peel&ecirc;</p>
+    </footer>
   </body>
 </html>
