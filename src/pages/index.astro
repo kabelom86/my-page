@@ -1,16 +1,50 @@
 ---
+import Header from "../components/Header.astro";
+import { Image } from "astro:assets";
 
+import htmlLogo from "../assets/icons8-html-48.png";
+import cssLogo from "../assets/icons8-css-48.png";
+import tailwindLogo from "../assets/icons8-tailwind-css-48.png";
+import jsLogo from "../assets/icons8-javascript-48.png";
+import pythonLogo from "../assets/icons8-python-48.png";
+import tsLogo from "../assets/icons8-typescript-48.png";
+import astroLogo from "../assets/icons8-astro-js-48.png";
+import svelteLogo from "../assets/icons8-svelte-48.png";
+import sqLogo from "../assets/icons8-sqlite-48.png";
+import supabaseLogo from "../assets/icons8-supabase-48.png";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Kabelo Peel&ecirc; -- Frontend Dev</title>
+  </head>
+  <body>
+    <Header />
+    <article>
+      <h1><span>Hello</span>, friend!</h1>
+      <h3>
+        I'm Kabelo -a frontend developer- and this is my page. You are welcome
+        🙂
+      </h3>
+    </article>
+    <section>
+      <h4>What I Know</h4>
+      <div class="logo-container">
+        <Image src={htmlLogo} alt="HTML logo" />
+        <Image src={cssLogo} alt="CSS logo" />
+        <Image src={tailwindLogo} alt="Tailwind logo" />
+        <Image src={jsLogo} alt="JS logo" />
+        <Image src={pythonLogo} alt="Python logo" />
+        <Image src={tsLogo} alt="Typescript logo" />
+        <Image src={astroLogo} alt="Astro JS logo" />
+        <Image src={svelteLogo} alt="Svelte JS logo" />
+        <Image src={sqLogo} alt="sqlite logo" />
+        <Image src={supabaseLogo} alt="supabase logo" />
+      </div>
+    </section>
+  </body>
 </html>
