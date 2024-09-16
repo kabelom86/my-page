@@ -17,6 +17,7 @@ import supabaseLogo from "../assets/icons8-supabase-48.png";
 import bashLogo from "../assets/icons8-bash-48.png";
 
 import githubLogo from "../assets/icons8-github-48.png";
+import inLogo from "../assets/icons8-linkedin-48.png";
 
 const pageTitle = "Kabelo Peelê -- Frontend Dev";
 ---
@@ -29,12 +30,25 @@ const pageTitle = "Kabelo Peelê -- Frontend Dev";
   body {
     margin: 0 auto;
     padding: 0;
-  }
-
-  /* article {
     display: flex;
     flex-direction: column;
-  } */
+    align-items: center;
+  }
+
+  .photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: center;
+  }
 </style>
 
 <html lang="en">
@@ -81,18 +95,9 @@ const pageTitle = "Kabelo Peelê -- Frontend Dev";
           <a href="https://github.com/kabelom86">
             <Image src={githubLogo} alt="github logo" />
           </a>
-          <!-- Contact form -->
-          <form
-            action="mailto:kabelom.p@live.com"
-            method="get"
-            enctype="text/plain"
-          >
-            <input type="text" name="subject" placeholder="Your Name" /><br />
-            <input type="email" name="email" placeholder="Your Email" /><br />
-            <textarea name="body" rows="5" cols="30" placeholder="Your Message"
-            ></textarea><br />
-            <input type="submit" value="Send" />
-          </form>
+          <a href="#">
+            <Image src={inLogo} alt="linkedIn logo" />
+          </a>
         </div>
       </section>
     </BaseLayout>

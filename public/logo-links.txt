@@ -9,3 +9,4 @@ Astro logo - <a target="_blank" href="https://icons8.com/icon/kXuRhjMIeKhk/astro
 Sqlite logo - <a target="_blank" href="https://icons8.com/icon/VMRAbKfEzssG/sqlite">SQLite</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 Supabase logo - <a target="_blank" href="https://icons8.com/icon/FSy9ge3Q95lL/supabase">Supabase</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 Github logo - <a target="_blank" href="https://icons8.com/icon/12598/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+Linkedin logo - <a target="_blank" href="https://icons8.com/icon/447/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
