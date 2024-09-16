@@ -19,10 +19,14 @@ import bashLogo from "../assets/icons8-bash-48.png";
 import githubLogo from "../assets/icons8-github-48.png";
 import inLogo from "../assets/icons8-linkedin-48.png";
 
-const pageTitle = "Kabelo Peelê -- Frontend Dev";
+const pageTitle = "Kabelo Peelê - Frontend Dev";
 ---
 
 <style>
+  h1 {
+    font-size: 3rem;
+  }
+
   .photo {
     display: flex;
     flex-direction: column;
@@ -32,6 +36,16 @@ const pageTitle = "Kabelo Peelê -- Frontend Dev";
   h4 {
     text-align: center;
     font-size: 1.15rem;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .contact-container {
@@ -53,8 +67,8 @@ const pageTitle = "Kabelo Peelê -- Frontend Dev";
         <div class="welcome">
           <h1><span is:raw>{Hello}</span>, friend!</h1>
           <h3>
-            I am Kabelo -a frontend developer- and this is my page. You are
-            welcome 🙂
+            My name is Kabelo Peel&ecirc;, and I develop on the frontend. This
+            is my page - welcome 🙂
           </h3>
         </div>
         <div class="photo">
