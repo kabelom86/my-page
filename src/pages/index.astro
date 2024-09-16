@@ -33,6 +33,10 @@ const pageTitle = "Kabelo Peelê - Frontend Dev";
     align-items: center;
   }
 
+  .photo .pic {
+    max-width: 100%;
+  }
+
   h4 {
     text-align: center;
     font-size: 1.15rem;
@@ -72,7 +76,13 @@ const pageTitle = "Kabelo Peelê - Frontend Dev";
           </h3>
         </div>
         <div class="photo">
-          <Image src={kbPhoto} alt="photo of myself" width="400" height="400" />
+          <Image
+            class="pic"
+            src={kbPhoto}
+            alt="photo of myself"
+            width="400"
+            height="400"
+          />
         </div>
       </article>
       <section>
