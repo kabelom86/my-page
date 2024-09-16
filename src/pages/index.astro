@@ -2,6 +2,8 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 
+import kbPhoto from "../assets/2024-09-14_06_38_23.jpg";
+
 import htmlLogo from "../assets/icons8-html-48.png";
 import cssLogo from "../assets/icons8-css-48.png";
 import tailwindLogo from "../assets/icons8-tailwind-css-48.png";
@@ -19,6 +21,22 @@ import githubLogo from "../assets/icons8-github-48.png";
 const pageTitle = "Kabelo Peelê -- Frontend Dev";
 ---
 
+<style>
+  html {
+    background-color: #c9e4ca;
+  }
+
+  body {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* article {
+    display: flex;
+    flex-direction: column;
+  } */
+</style>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -29,11 +47,16 @@ const pageTitle = "Kabelo Peelê -- Frontend Dev";
   <body>
     <BaseLayout pageTitle={pageTitle}>
       <article>
-        <h1><span is:raw>{Hello}</span>, friend!</h1>
-        <h3>
-          I am Kabelo -a frontend developer- and this is my page. You are
-          welcome 🙂
-        </h3>
+        <div class="welcome">
+          <h1><span is:raw>{Hello}</span>, friend!</h1>
+          <h3>
+            I am Kabelo -a frontend developer- and this is my page. You are
+            welcome 🙂
+          </h3>
+        </div>
+        <div class="photo">
+          <Image src={kbPhoto} alt="photo of myself" width="400" height="400" />
+        </div>
       </article>
       <section>
         <h4>-- What I Know --</h4>
