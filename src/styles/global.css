@@ -1,0 +1,29 @@
+html {
+  background-color: #c9e4ca;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: "Big Shoulders Display Variable", system-ui;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navigation Links */
+.nav-links {
+  font-size: 1.35rem;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  text-decoration: wavy underline lightcoral;
+  color: black;
+  padding-left: 0.4em;
+}
+
+/* Global <p> */
+p {
+  font-size: 1.2rem;
+}
