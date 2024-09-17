@@ -2,6 +2,8 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 
+import GreetingComp from "../components/GreetingComp.vue";
+
 import kbPhoto from "../assets/2024-09-14_06_38_23.jpg";
 
 import htmlLogo from "../assets/icons8-html-48.png";
@@ -56,6 +58,34 @@ const pageTitle = "Kabelo Peelê - Frontend Dev";
     display: flex;
     justify-content: center;
   }
+
+  /*  Adjust styles for larger screens */
+  @media screen and (min-width: 580px) {
+    main {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+
+    h1 {
+      font-size: 6rem;
+    }
+
+    .welcome h3 {
+      font-size: 1.38rem;
+    }
+
+    .photo .pic {
+      max-width: 100%;
+      width: 420px;
+      height: 420px;
+    }
+
+    h3,
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
 </style>
 
 <html lang="en">
@@ -67,9 +97,9 @@ const pageTitle = "Kabelo Peelê - Frontend Dev";
   </head>
   <body>
     <BaseLayout pageTitle={pageTitle}>
-      <article>
+      <main>
         <div class="welcome">
-          <h1><span is:raw>{Hello}</span>, friend!</h1>
+          <GreetingComp client:load />
           <h3>
             My name is Kabelo Peel&ecirc;, and I develop on the frontend. This
             is my page - welcome 🙂
@@ -84,7 +114,7 @@ const pageTitle = "Kabelo Peelê - Frontend Dev";
             height="400"
           />
         </div>
-      </article>
+      </main>
       <section>
         <h4>-- What I Know --</h4>
         <div class="logo-container">

@@ -10,7 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/vue": "^4.5.0",
     "@fontsource-variable/big-shoulders-display": "^5.1.0",
-    "astro": "^4.15.4"
+    "astro": "^4.15.4",
+    "vue": "^3.5.6"
   }
 }
