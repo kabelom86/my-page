@@ -12,11 +12,8 @@ import tailwindLogo from "../assets/icons8-tailwind-css-48.png";
 import jsLogo from "../assets/icons8-javascript-48.png";
 import pythonLogo from "../assets/icons8-python-48.png";
 import tsLogo from "../assets/icons8-typescript-48.png";
+import vueLogo from "../assets/icons8-vuejs-48.png";
 import astroLogo from "../assets/icons8-astro-js-48.png";
-import svelteLogo from "../assets/icons8-svelte-48.png";
-import sqLogo from "../assets/icons8-sqlite-48.png";
-import supabaseLogo from "../assets/icons8-supabase-48.png";
-import bashLogo from "../assets/icons8-bash-48.png";
 
 import githubLogo from "../assets/icons8-github-48.png";
 import inLogo from "../assets/icons8-linkedin-48.png";
@@ -52,6 +49,21 @@ const pageTitle = "Kabelo Peelê - Frontend Dev";
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  .work-status {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: chartreuse;
+    border: 0.3px solid grey;
+    border-radius: 50%;
+  }
+
+  .code-wars {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
   }
 
   .contact-container {
@@ -104,6 +116,7 @@ const pageTitle = "Kabelo Peelê - Frontend Dev";
             My name is Kabelo Peel&ecirc;, and I develop on the frontend. This
             is my page - welcome 🙂
           </h3>
+          <p>Available for work: <span class="work-status"></span></p>
         </div>
         <div class="photo">
           <Image
@@ -123,12 +136,15 @@ const pageTitle = "Kabelo Peelê - Frontend Dev";
           <Image src={tailwindLogo} alt="Tailwind logo" />
           <Image src={jsLogo} alt="JS logo" />
           <Image src={pythonLogo} alt="Python logo" />
+          <Image src={vueLogo} alt="Vuejs logo" />
           <Image src={tsLogo} alt="Typescript logo" />
           <Image src={astroLogo} alt="Astro JS logo" />
-          <Image src={svelteLogo} alt="Svelte JS logo" />
-          <Image src={sqLogo} alt="sqlite logo" />
-          <Image src={supabaseLogo} alt="supabase logo" />
-          <Image src={bashLogo} alt="bash logo" />
+        </div>
+        <div class="code-wars">
+          <img
+            src="https://www.codewars.com/users/kabelom86/badges/small"
+            alt="code wars badge"
+          />
         </div>
       </section>
       <section>

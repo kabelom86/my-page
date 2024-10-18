@@ -3,10 +3,7 @@ Python logo - <a target="_blank" href="https://icons8.com/icon/12584/python">Pyt
 HTML logo - <a target="_blank" href="https://icons8.com/icon/78098/html">HTML</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 CSS logo - <a target="_blank" href="https://icons8.com/icon/78095/css">CSS</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 TS logo - <a target="_blank" href="https://icons8.com/icon/vMqgHSToxrJR/typescript">TypeScript</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-Svelte logo - <a target="_blank" href="https://icons8.com/icon/7ST6T6xV3OPb/svelte">Svelte</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+Vuejs logo - <a target="_blank" href="https://icons8.com/icon/jZHNPYILDZaH/vuejs">Vuejs</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 Tailwind logo - <a target="_blank" href="https://icons8.com/icon/qOFWMoaAQIdR/tailwind-css">Tailwind CSS</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 Astro logo - <a target="_blank" href="https://icons8.com/icon/kXuRhjMIeKhk/astro-js">Astro JS</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-Sqlite logo - <a target="_blank" href="https://icons8.com/icon/VMRAbKfEzssG/sqlite">SQLite</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-Supabase logo - <a target="_blank" href="https://icons8.com/icon/FSy9ge3Q95lL/supabase">Supabase</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-Github logo - <a target="_blank" href="https://icons8.com/icon/12598/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 Linkedin logo - <a target="_blank" href="https://icons8.com/icon/447/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
